@@ -1,7 +1,9 @@
-from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.db import models
 from django_extensions.db.models import TimeStampedModel
+
 from accounts.managers import CustomUserManager
+
 
 class CustomUser(AbstractUser, TimeStampedModel):
     username = None

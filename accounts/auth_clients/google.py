@@ -27,7 +27,7 @@ class Google:
                         emial=response_data["email"],
                         display_name=response_data["family_name"],
                         image=response_data["pitcher"],
-                        prvider= self.provider
+                        prvider=self.provider
                     )
                     return user
         except Exception:
